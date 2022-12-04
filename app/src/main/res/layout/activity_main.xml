@@ -110,6 +110,7 @@
                 android:onClick="playerTap"
                 android:padding="20sp"
                 android:contentDescription="tile6" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -152,6 +153,16 @@
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/winMark"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gameGrid"
+        app:layout_constraintEnd_toEndOf="@+id/gameGrid"
+        app:layout_constraintStart_toStartOf="@+id/gameGrid"
+        app:layout_constraintTop_toTopOf="@+id/gameGrid"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
         android:id="@+id/gameStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -162,4 +173,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gameGrid"
         app:srcCompat="@drawable/xplay" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
